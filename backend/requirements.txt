@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+pyserial
+groq
+fpdf2
+websockets

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GhostNet NIDS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div>
+            <h1>👻 GhostNet NIDS</h1>
+            <p>AI Powered Wireless Intrusion Detection System</p>
+        </div>
+        
+        <div style="display: flex; gap: 15px; align-items: center;">
+            <!-- PDF Export Button -->
+            <a href="http://127.0.0.1:8000/export/pdf" class="btn-export" target="_blank">
+                📄 Export SOC Report
+            </a>
+
+            <div class="status">
+                <span class="dot"></span>
+                System Online
+            </div>
+        </div>
+    </header>
+
+    <section class="cards">
+        <div class="card">
+            <h2 id="totalNetworks">0</h2>
+            <p>Total Networks</p>
+        </div>
+        <div class="card high">
+            <h2 id="highRisk">0</h2>
+            <p>High Risk</p>
+        </div>
+        <div class="card medium">
+            <h2 id="mediumRisk">0</h2>
+            <p>Medium Risk</p>
+        </div>
+        <div class="card low">
+            <h2 id="lowRisk">0</h2>
+            <p>Low Risk</p>
+        </div>
+    </section>
+
+    <main>
+        <section class="left">
+            <div class="panel">
+                <h2>📡 Live Network Monitor</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>SSID</th>
+                            <th>Security</th>
+                            <th>RSSI</th>
+                            <th>Risk</th>
+                        </tr>
+                    </thead>
+                    <tbody id="networkTable">
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <aside class="right">
+            <div class="panel">
+                <h2>🤖 AI Security Analyst</h2>
+                <div id="threatBox">
+                    Waiting for analysis...
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <section class="timeline">
+        <div class="panel">
+            <h2>📈 Threat Timeline</h2>
+            <div id="timeline">
+                Waiting for network activity...
+            </div>
+        </div>
+    </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
